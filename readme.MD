@@ -2,6 +2,9 @@
 
 In this proof of concept, we explore the power and flexibility of CSS Grid for creating responsive and dynamic layouts.
 
+You can find the deployed website with this CSS Grid proof of
+concept [here](https://oscarlagatta.github.io/cssgrid-poc/).
+
 ## Introduction
 
 CSS Grid is a powerful layout system that allows you to create two-dimensional grid-based layouts in CSS. It provides a
@@ -31,27 +34,28 @@ Let's take a look at the CSS code that creates this layout using CSS Grid.
 
 ```css
 .container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
     "header header"
     "sidebar main"
     "footer footer";
 }
 
 .header {
-  grid-area: header;
+    grid-area: header;
 }
 
 .sidebar {
-  grid-area: sidebar;
+    grid-area: sidebar;
 }
 
 .main {
-  grid-area: main;
+    grid-area: main;
 }
 
 .footer {
-  grid-area: footer;
+    grid-area: footer;
 }
+```
